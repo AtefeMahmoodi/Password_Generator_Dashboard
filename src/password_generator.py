@@ -102,13 +102,13 @@ class PinCodeGenerator(PasswordGenerator):
         return ''.join([random.choice(string.digits) for _ in range(self.length)])
 
 
-# def main():
-#     pin = PinCodeGenerator(length = 10)
-#     random_pass = RandomPasswordGenerator(length = 12, include_symbols = False)
-#     memorable = MemorablePasswordGenerator(number_of_words=4, capitalize=True, separator='*')
-#     print(f"This is a random password: {random_pass.generate()}")
-#     print(f"This is a random pin code: {pin.generate()}")
-#     print(f"This is a memorable password: {memorable.generate()}")
+ def main():
+     pin = PinCodeGenerator(length = 10)
+     random_pass = RandomPasswordGenerator(length = 12, include_symbols = False)
+     memorable = MemorablePasswordGenerator(number_of_words=4, capitalize=True, separator='*')
+     print(f"This is a random password: {random_pass.generate()}")
+     print(f"This is a random pin code: {pin.generate()}")
+     print(f"This is a memorable password: {memorable.generate()}")
 
-# if __name__ == "__main__":
-#     main()
+ if __name__ == "__main__":
+     main()
